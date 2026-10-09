@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Igora Burlakova profila lapa un programmēšanas prasmju pārskats.">
+    <title>Igors Burlakovs — mana profila lapa</title>
+    <link rel="stylesheet" href="style_N6.css">
+</head>
+<body>
+    <header class="vietnes-galvene">
+        <nav aria-label="Galvenā navigācija">
+            <ul>
+                <li><a href="#par-mani">Par mani</a></li>
+                <li><a href="#prasmes">Prasmes</a></li>
+                <li><a href="#sazinaties">Sazināties</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="sakums">
+        <section class="ievads" aria-labelledby="lapas-virsraksts">
+            <div class="ievada-teksts">
+                <p class="mazais-virsraksts">PERSONĪGĀ PROFILA LAPA</p>
+                <h1 id="lapas-virsraksts" class="ievada-virsraksts">Sveiki! Esmu Igors Burlakovs.</h1>
+                <p class="ievada-apraksts">Mācos programmēšanu un  pilnveidoju savas prasmes tīmekļa lapu veidošanā.</p>
+            </div>
+        </section>
+
+        <section id="par-mani" aria-labelledby="par-mani-virsraksts">
+            <p class="sadaļas-atzime">01 / IEPAZĪSIMIES</p>
+            <h2 id="par-mani-virsraksts">Par mani</h2>
+            <article class="par-mani-raksts">
+                <p>Esmu <strong class="izcelts">Igors Burlakovs</strong>. Apgūstu tīmekļa lapu veidošanas pamatus un iepazīstu programmēšanu ar HTML, Python un C.</p>
+            </article>
+            <!-- N6: Flexbox vizītkarte — attēls pa kreisi, teksts pa labi; flex-wrap ļauj kartītei pielāgoties mazam ekrānam. -->
+            <article class="vizitkarte">
+                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/9b998868-8b9b-46fe-86fe-567a00d425df/220x330"
+                     alt="Igora izvēlētais attēls" width="160">
+                <div class="vizitkarte-teksts">
+                    <h3>Igors Burlakovs</h3>
+                    <p><strong>Loma:</strong> programmēšanas students</p>
+                    <p>Mācos veidot tīmekļa lapas un praktizēju HTML, CSS, Python un C.</p>
+                    <a class="vizitkarte-poga" href="#sazinaties">Sazināties ar mani →</a>
+                </div>
+            </article>
+            <aside class="piezime">
+                <strong>Īsumā par mani</strong>
+                <p>Manas pašreizējās mācību tēmas: tīmekļa lapu struktūra, CSS un programmēšanas pamati.</p>
+            </aside>
+        </section>
+
+        <section id="prasmes" aria-labelledby="prasmju-virsraksts">
+            <p class="sadaļas-atzime">02 / KO APUSTU</p>
+            <h2 id="prasmju-virsraksts">Manas prasmes</h2>
+            <p>Šobrīd mācos un praktizēju šīs tehnoloģijas:</p>
+            <div class="tabulas-riklis">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tehnoloģija</th>
+                            <th scope="col">Pašreizējais līmenis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Apguves pamati</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>Vidējs</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>Jāmācās tālāk</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="sazinaties" aria-labelledby="sazinaties-virsraksts">
+            <p class="sadaļas-atzime">03 / SAZINĀSIMIES</p>
+            <h2 id="sazinaties-virsraksts">Uzraksti man</h2>
+            <p>Aizpildi formu, lai sagatavotu ziņojumu.</p>
+            <form action="#" method="get">
+                <div class="formas-lauks">
+                    <label for="vards">Tavs vārds</label>
+                    <input type="text" id="vards" name="vards" autocomplete="name" placeholder="Kā tevi sauc?">
+                </div>
+                <div class="formas-lauks">
+                    <label for="epasts">E-pasta adrese</label>
+                    <input type="email" id="epasts" name="epasts" autocomplete="email" placeholder="tu@example.com">
+                </div>
+                <div class="formas-lauks">
+                    <label for="sazinas-veids">Vēlamais saziņas veids</label>
+                    <select id="sazinas-veids" name="sazinas-veids">
+                        <option value="epasts">E-pasts</option>
+                        <option value="vestule">Atbilde uz ziņojumu</option>
+                    </select>
+                </div>
+                <div class="formas-lauks">
+                    <label for="zinojums">Ziņojums</label>
+                    <textarea id="zinojums" name="zinojums" rows="4" placeholder="Raksti savu ziņojumu šeit..."></textarea>
+                </div>
+                <button type="submit">Sūtīt ziņojumu <span aria-hidden="true">→</span></button>
+            </form>
+        </section>
+
+        <section class="izkartojuma-piemeri" aria-labelledby="piemeru-virsraksts">
+            <p class="sadaļas-atzime">04 / CSS PRAKSE</p>
+            <h2 id="piemeru-virsraksts">Izcelts piemērs</h2>
+            <p>Šis <span class="izcelts">teksta fragments ir izcelts</span>, un tālāk redzams bloka piemērs.</p>
+            <article class="kartite">
+                <h3>Mana mācību piezīme</h3>
+                <p>demonstrē CSS kastes modeli: satura laukumu, iekšējo atstarpi un apmali.</p>
+            </article>
+            <div class="redzamibas-piemeri">
+                <p class="slepts-ar-display">display: none piemērs</p>
+                <p class="slepts-ar-visibility">visibility: hidden piemērs</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Igors Burlakovs · Veidota, mācoties HTML un CSS.</p>
+        <img
+            class="footer-attels"
+            src="https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/9b998868-8b9b-46fe-86fe-567a00d425df/220x330"
+            alt="Filmas attēls no Kinopoisk"
+            loading="lazy"
+        >
+    </footer>
+</body>
+</html>
